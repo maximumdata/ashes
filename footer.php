@@ -1,0 +1,25 @@
+
+<?php wp_footer(); 
+if( is_single() ) {
+  echo '<script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>';
+  echo '<script>hljs.initHighlightingOnLoad();</script>';
+} ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/public/js/vendor.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/public/js/mike.js"></script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//mikedettmer.com/analytics/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//mikedettmer.com/analytics/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

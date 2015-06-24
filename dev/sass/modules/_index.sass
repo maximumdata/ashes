@@ -1,0 +1,34 @@
+#index
+  margin-top: 46px
+  #left-half
+    +position(fixed, 0 0 0 0)
+    +media($tablet-down)
+      display: none
+    width: 50%
+    background: url('../ashes/public/img/me.jpg') left center
+    background-size: cover
+    #social
+      +position(absolute, 50px 0 0 0)
+  #right-half
+    width: 50%
+    min-height: 100vh
+    float: right
+    padding: 5px
+    position: relative
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75)
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75)
+    +media($tablet-down)
+      width: 100%
+      float: none
+      box-shadow: none
+    article
+      margin: 0 0 40px 0
+      .cat
+        font-size: .75rem
+        line-height: .75rem
+      .content
+        p
+          margin-top: 0
+        h2
+          padding-bottom: 5px

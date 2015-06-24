@@ -1,0 +1,38 @@
+nav
+  +position(fixed, 0 0 null 0)
+  z-index: 9
+  background: black
+  color: white
+  padding: 0 5px
+  .menu
+    +outer-container
+    +media($mobile)
+      display: none
+    ul
+      +span-columns(9)
+      +media($tablet)
+        +span-columns(5)
+      margin: 0
+      list-style-type: none
+      li
+        display: inline-block
+        padding: 10px
+        a
+          //color: white
+        .sub-menu
+          +position(absolute)
+          display: none
+          top: 32px
+          z-index: 10
+          width: 75px
+          li
+            background: black
+            width: 100%
+            margin: 0 0 0 -1px
+            padding: 0 2px
+            //border: solid 1px rgba(gray, .5)
+    .brand
+      +span-columns(3)
+      +media($tablet)
+        +span-columns(3)
+      text-align: right

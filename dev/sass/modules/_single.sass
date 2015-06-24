@@ -1,0 +1,85 @@
+#single
+  .hover
+    background-color: black
+    color: white
+  .superscript
+      font-size: smaller
+      vertical-align: super
+      line-height: .5em
+      padding: 0 0 0 1px
+  header
+    +position(relative)
+    height: 75vh
+    z-index: 8
+    background-size: cover
+    background-position: center
+    #info-wrap
+      //+position(absolute, 100px 0 null 0)
+      padding: 100px 0 0 0
+      text-align: center
+      +outer-container
+      h1
+        margin: 10px 0
+      h5
+        margin: 10px 0
+        p
+          margin: 0
+      #scroll-click
+        margin-top: 10px
+        //cursor: pointer
+        #arrow
+          font-size: 30px
+          a
+            color: black
+            text-decoration: none
+  #post
+    +outer-container
+    a
+      transition: all .5s ease
+    article
+      +span-columns(9)
+      +media($tablet)
+        +span-columns(5)
+      +media($mobile)
+        +span-columns(4)
+      .single
+        .post-title
+          margin-top: 0
+        .post-content
+          p
+            line-height: 1.5rem
+          code
+            background: #f0f0f0
+            padding: .25em
+          a
+            text-decoration: underline
+            font-weight: bold
+    aside
+      +span-columns(3)
+      +media($tablet)
+        +span-columns(3)
+      +media($mobile)
+        +span-columns(4)
+      .sidebar-wrap
+        font-size: .75em
+        overflow-x: hidden
+        text-overflow: ellipsis
+        transition: all .33s ease
+        i
+          font-size: 1rem
+          vertical-align: text-top
+          margin-right: 2px
+        a
+          text-decoration: underline
+          //vertical-align: baseline
+          //margin-left: 2px
+        
+  #comments
+    +outer-container
+    #disqus_thread
+      //height: 100vh
+      +span-columns(12)
+      +media($tablet)
+        span-columns(8)
+      +media($mobile)
+        span-columns(4)
