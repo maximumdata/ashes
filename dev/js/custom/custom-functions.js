@@ -93,7 +93,7 @@ $.fn.linkSuperscript = function() {
 };
 
 
-// index functions
+// global functions
 
 $.fn.menuHoverDropdown = function(hoverElement) {
   // display dropdown category menu when hovering over "blog" link
@@ -103,7 +103,21 @@ $.fn.menuHoverDropdown = function(hoverElement) {
   });
   
   $('main').mouseenter(function() {
-    $('.sub-menu').fadeOut("fast");
+    $('#menu-menu-1 > .menu-item-has-children > .sub-menu').fadeOut("fast");
   });
   
+};
+
+$.fn.mobileMenu = function() {
+  var menuOut = 0;
+  $('#burger').click(function(){
+    if(menuOut) {
+      $('#off-canvas').animate({"left":"-51vw"}, 600, "swing");
+      menuOut = 0;
+    } else { $('#off-canvas').animate({"left":"0vw"}, 600, "swing"); menuOut = 1; }
+  });
+};
+
+$.fn.addDownArrow = function() {
+  $(this).children("a").append("<small>&nbsp;&#x25BC;</small>");
 };

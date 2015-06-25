@@ -13,8 +13,8 @@
       <h1><?php the_title(); ?></h1>
       <h5><?php the_excerpt(); ?></h5>
       <div id="scroll-click">
-        <!--<small>Click</small>-->
-        <div id="arrow"><a href="#post-<?php the_ID(); ?>">&#x25BC;</a></div>
+        <a href="#post-<?php the_ID(); ?>"><small>Click!</small>
+        <div id="arrow">&#x25BC;</a></div>
       </div>
     </div>
   </header>
@@ -22,7 +22,7 @@
     <article>
       
         <div id="post-<?php the_ID(); ?>" <?php post_class('single'); ?>>
-          <h3 class="post-title"><?php the_title(); ?></h3>
+          <h2 class="post-title"><?php the_title(); ?></h2>
           <small><?php the_time('F jS, Y'); ?> at <?php the_time('g:i a'); ?>, filed under: 
           <?php
             $categories = get_the_category();

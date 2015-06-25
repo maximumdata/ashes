@@ -1,10 +1,11 @@
 nav
   +position(fixed, 0 0 null 0)
   z-index: 9
-  background: black
-  color: white
+  background: $darktext
+  color: $lighttext
   padding: 0 5px
-  .menu
+
+  .big-menu
     +outer-container
     +media($mobile)
       display: none
@@ -26,13 +27,34 @@ nav
           z-index: 10
           width: 75px
           li
-            background: black
+            background: $darktext
             width: 100%
             margin: 0 0 0 -1px
             padding: 0 2px
-            //border: solid 1px rgba(gray, .5)
     .brand
       +span-columns(3)
       +media($tablet)
         +span-columns(3)
       text-align: right
+      padding-top: 2px
+  #mobile-menu
+    +outer-container
+    display: none
+    padding: 0 10px
+    +media($mobile)
+      display: block
+    #burger
+      float: left
+      margin-top: 6px
+    #brand
+      float: right
+      text-align: right
+#off-canvas
+  +position(fixed, 47px null 0 -51vw)
+  z-index: 10
+  background: $darktext
+  color: $lighttext
+  width: 50vw
+  padding-left: 15px
+  ul
+    list-style-type: none

@@ -1,7 +1,8 @@
 #single
   .hover
-    background-color: black
-    color: white
+    background-color: $darktext
+    color: $lighttext !important
+    padding: 2px
   .superscript
       font-size: smaller
       vertical-align: super
@@ -30,12 +31,13 @@
         #arrow
           font-size: 30px
           a
-            color: black
+            color: $linkcolor
             text-decoration: none
   #post
     +outer-container
     a
-      transition: all .5s ease
+      transition: all .25s ease
+      color: $linkcolor
     article
       +span-columns(9)
       +media($tablet)
@@ -53,7 +55,7 @@
             padding: .25em
           a
             text-decoration: underline
-            font-weight: bold
+            //font-weight: bold
     aside
       +span-columns(3)
       +media($tablet)
@@ -64,7 +66,7 @@
         font-size: .75em
         overflow-x: hidden
         text-overflow: ellipsis
-        transition: all .33s ease
+        transition: all .25s ease
         i
           font-size: 1rem
           vertical-align: text-top
