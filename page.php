@@ -1,18 +1,13 @@
 <?php get_header(); ?>
-<style>
-    #page a {
-        color: #1985A1;
-    }
-</style>
 <main id="index">
   <div id="left-half">
     <ul id="social">
-      <li><a href="https://github.com/maximumdata/" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
-      <li><a href="https://www.linkedin.com/pub/michael-dettmer/a8/a81/67b" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-      <li><a href="https://www.facebook.com/maximumdata" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-      <li><a href="https://twitter.com/DOOM2dotEXE" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-      <li><a href="mailto:mike@mikedettmer.com" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-      <li><a href="http://steamcommunity.com/id/galloughs/" target="_blank"><i class="fa fa-steam-square fa-3x"></i></a></li>
+      <li><a href="https://github.com/maximumdata/" target="_blank"><i class="fa fa-github-square fa-3x"></i></a><span class="name">Github</span></li>
+      <li><a href="https://www.linkedin.com/pub/michael-dettmer/a8/a81/67b" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a><span class="name">LinkedIn</span></li>
+      <li><a href="https://www.facebook.com/maximumdata" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a><span class="name">Facebook</span></li>
+      <li><a href="https://twitter.com/DOOM2dotEXE" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a><span class="name">Twitter</span></li>
+      <li><a href="mailto:mike@mikedettmer.com" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a><span class="name">Email</span></li>
+      <li><a href="http://steamcommunity.com/id/galloughs/" target="_blank"><i class="fa fa-steam-square fa-3x"></i></a><span class="name">Steam</span></li>
     </ul>
   </div>
   <div id="right-half">
@@ -45,5 +40,9 @@
     <?php endif; ?>
   </div>
 </main>
-
+<div class="hidden-stuff">
+  <div class="sidebar-wrap"></div>
+  <div id="post"></div>
+  <div id="comments"></div>
+</div>
 <?php get_footer(); ?>

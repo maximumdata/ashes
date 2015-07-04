@@ -24,4 +24,10 @@ $(document).ready(function(){
   
   $('#arrow').bounceArrow(900, 100);
   
+  /*$('#social > li').hover(function(){
+    $(this).children(".name").css("margin-left", "5px");
+  }, function(){
+    $(this).children(".name").css("margin-left", "-25vw");
+  });*/
+  
 });

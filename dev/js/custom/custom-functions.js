@@ -48,7 +48,7 @@ $.fn.bounceArrow = function(time, times) {
 $.fn.linkHighlight = function() {
   // highlight links in the sidebar when hovering in the article, and vice-versa
   
-  var selectorText = ".post-content > p > a, .sidebar-wrap > a";
+  var selectorText = ".post-content a, .sidebar-wrap a";
   $(selectorText).mouseenter(function(){
     var $this = $(this);
     $(selectorText).each(function(){
@@ -82,7 +82,7 @@ $.fn.linkSuperscript = function() {
   var curLinkCount = 1;
   $('.sidebar-wrap > a').each(function(){
     var $this = $(this);
-    $('.post-content > p > a').each(function(){
+    $('.post-content a').each(function(){
       if( $this.attr("href") == $(this).attr("href") ) {
         $this.after("<span class='superscript'>"+curLinkCount+"</span>");
         $(this).after("<span class='superscript'>"+curLinkCount+"</span>");
@@ -121,3 +121,4 @@ $.fn.mobileMenu = function() {
 $.fn.addDownArrow = function() {
   $(this).children("a").append("<small>&nbsp;&#x25BC;</small>");
 };
+

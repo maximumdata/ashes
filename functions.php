@@ -8,6 +8,14 @@ function register_header_menu() {
 }
 add_action( 'init', 'register_header_menu' );
 
-//add_theme_support( 'post-thumbnails' );
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+
+	if ( ( is_home() && $query->is_main_query() ) || is_feed() )
+		$query->set( 'post_type', array( 'post', 'projects' ) );
+
+	return $query;
+}
 
 ?>

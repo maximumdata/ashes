@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href='//fonts.googleapis.com/css?family=Josefin+Sans|Arvo' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php if( is_single() ) {
   echo '<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">';

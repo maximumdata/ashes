@@ -1,15 +1,26 @@
 #index
   margin-top: 46px
+  .iddqd
+    background-image: url('../ashes/public/img/iddqd.jpg') !important
   #left-half
     +position(fixed, 0 0 0 0)
     +media($tablet-down)
       display: none
     width: 50%
-    background: url('../ashes/public/img/me.jpg') left center
+    background-image: url('../ashes/public/img/me.jpg')
+    background-position: left center
     background-size: cover
     #social
       +position(absolute, 50px 0 0 0)
       color: $darktext
+      width: 33%
+      .name
+        display: none
+        font-size: 1.5em
+        vertical-align: middle
+        line-height: 2em
+        margin-left: -25vw
+        transition: margin-left .5s ease
   #right-half
     width: 50%
     min-height: 100vh
@@ -43,3 +54,5 @@
             background-color: $darktext
             color: $lighttext !important
             padding: 2px
+.hidden-stuff
+  display: none

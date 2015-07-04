@@ -50,6 +50,7 @@
   
   </section>
   <section id="comments">
+    <div id="tag"><i class="fa fa-comments fa-2x"></i> <h2>Comments</h2></div>
     <div id="disqus_thread"></div>
   </section>
 </main>
