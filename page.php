@@ -45,4 +45,26 @@
   <div id="post"></div>
   <div id="comments"></div>
 </div>
+<script>
+  $(document).keypress((function(e) {
+    var pass = "iddqd", typed = "", on = 0;
+    return function (e) {
+      typed += String.fromCharCode(e.which);
+      
+      console.log(typed);
+      if ( typed === pass && !on ) {
+        $('#left-half').addClass('iddqd');
+        on = 1;
+        typed = "";
+      } else if ( typed === pass && on ) {
+        $('#left-half').removeClass('iddqd');
+        on = 0;
+        typed = "";
+      }
+      if ( typed.length > pass.length ) {
+        typed = "";
+      }
+    };
+  })());
+</script>
 <?php get_footer(); ?>

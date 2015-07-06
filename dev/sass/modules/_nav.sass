@@ -50,11 +50,15 @@ nav
       float: right
       text-align: right
 #off-canvas
-  +position(fixed, 47px null 0 -51vw)
-  z-index: 10
+  +position(fixed, 47px null null -101vw)
+  height: 1000px
+  overflow-y: hidden
+  text-align: center
+  display: inline-block
   background: $darktext
   color: $lighttext
-  width: 50vw
-  padding-left: 15px
+  width: 100vw
+  font-size: 2rem
+  line-height: 1em
   ul
     list-style-type: none

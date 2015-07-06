@@ -11,7 +11,7 @@ $(document).ready(function(){
   var menuOut = 0;
   $('#burger').click(function(){
     if(menuOut) {
-      $('#off-canvas').animate({"left":"-51vw"}, 600, "swing");
+      $('#off-canvas').animate({"left":"-101vw"}, 600, "swing");
       menuOut = 0;
     } else { $('#off-canvas').animate({"left":"0vw"}, 600, "swing"); menuOut = 1; }
   });
