@@ -13,9 +13,7 @@
 } ?>
 </head>
 <body>
-  <div id="off-canvas">
-    <?php wp_nav_menu( array( 'theme_location' => 'off-canvas-menu', 'menu' => 'off-canvas-menu', 'container' => false ) ); ?>
-  </div>
+  
   <nav>
     <div class="big-menu">
       <?php wp_nav_menu( array( 'menu' => 'header-menu', 'container' => false ) ); ?>
@@ -31,6 +29,9 @@
       <div id="brand">
         <h2 id="name">Mike Dettmer</h2>
         <h4 id="tag">Builds the internet</h4>
+      </div>
+      <div id="off-canvas">
+        <?php wp_nav_menu( array( 'theme_location' => 'off-canvas-menu', 'menu' => 'off-canvas-menu', 'container' => false ) ); ?>
       </div>
     </div>
   

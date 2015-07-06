@@ -10,7 +10,7 @@
       padding: 0 0 0 1px
   header
     +position(relative)
-    height: 75vh
+    height: 500px //75vh
     z-index: 8
     background-size: cover
     background-position: center
@@ -39,6 +39,7 @@
       transition: all .25s ease
       color: $linkcolor
     article
+      padding: 0 10px
       +span-columns(12)
       +media($tablet)
         +span-columns(8)
@@ -62,6 +63,7 @@
   #comments
     +outer-container
     margin-top: 20px
+    padding: 0 10px
     #tag
       h2
         display: inline
