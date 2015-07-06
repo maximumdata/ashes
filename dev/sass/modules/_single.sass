@@ -39,9 +39,9 @@
       transition: all .25s ease
       color: $linkcolor
     article
-      +span-columns(9)
+      +span-columns(12)
       +media($tablet)
-        +span-columns(5)
+        +span-columns(8)
       +media($mobile)
         +span-columns(4)
       .single
@@ -55,27 +55,10 @@
             padding: .25rem
           a
             text-decoration: underline
-            //font-weight: bold
-    aside
-      +span-columns(3)
-      +media($tablet)
-        +span-columns(3)
-      +media($mobile)
-        +span-columns(4)
-      .sidebar-wrap
-        font-size: .75em
-        overflow-x: hidden
-        text-overflow: ellipsis
-        transition: all .25s ease
-        i
-          font-size: 1rem
-          vertical-align: text-top
-          margin-right: 2px
-        a
-          text-decoration: underline
-          //vertical-align: baseline
-          //margin-left: 2px
-        
+            &:hover
+              background-color: $darktext
+              color: $lighttext
+              padding: 2px
   #comments
     +outer-container
     margin-top: 20px

@@ -1,6 +1,5 @@
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/public/js/vendor.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/public/js/mike.js"></script>
 <!-- Piwik -->
 <script type="text/javascript">
