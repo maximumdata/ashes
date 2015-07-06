@@ -40,9 +40,6 @@
           <div class="post-content"><?php the_content(); ?></div>
         </div>
       </article>
-      <aside>
-          <?php get_sidebar(); ?>
-      </aside>
       <?php endwhile; ?>
       <?php else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

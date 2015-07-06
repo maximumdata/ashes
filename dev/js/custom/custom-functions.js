@@ -1,3 +1,4 @@
+/*
 // functions for single blog pages
 
 $.fn.fixElement = function(top, bottom) {
@@ -122,3 +123,4 @@ $.fn.addDownArrow = function() {
   $(this).children("a").append("<small>&nbsp;&#x25BC;</small>");
 };
 
+*/
