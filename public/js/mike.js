@@ -1,12 +1,12 @@
 $(document).ready(function(){
   
-  $('#menu-menu-1 > .menu-item-has-children').mouseenter(function() {
+  /*$('#menu-menu-1 > .menu-item-has-children').mouseenter(function() {
     $('#menu-menu-1 > .menu-item-has-children').children('.sub-menu').fadeIn("fast");
   });
   
   $('main').mouseenter(function() {
     $('#menu-menu-1 > .menu-item-has-children > .sub-menu').fadeOut("fast");
-  });
+  });*/
 
   var menuOut = 0;
   $('#burger').click(function(){
